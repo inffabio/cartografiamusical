@@ -1,0 +1,148 @@
+/* ==== topo 1 ==== */
+
+.topo-1{
+	
+	 background-color: #5A5C51;	 height: 20px;}
+
+
+/* ==== topo 2 ==== */
+.topo-2{background-color: #3A3A3A;height: 50px;padding-bottom:5px;}
+
+/* ==== barra de menu topo ==== */
+
+.nav-topo{
+	 background: #3A3A3A;	 
+	 color: white;	
+	 padding-top:10px;	
+}
+
+.nav-topo ul{
+	padding:0px;
+	margin:0px;
+	float: left;
+	width: 100%;
+	list-style:none;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size:1.1em;		
+}
+
+.nav-topo ul li { display: inline; }
+ 
+.nav-topo ul li a {		
+	color: white;
+	text-decoration: none;
+	padding: 2px 10px;
+	float:left;
+		}
+.nav-topo ul li a:hover {
+			
+color: white;
+border-bottom:3px solid #EEB108;
+	
+}
+
+/* ====                                          CORPO DA PÁGINA                                         ==== */
+
+
+/* ==== Menu lateral==== */
+.lc{ height:500px;background: #B3B3B3 }
+
+.area-espa{ padding-top:20px;}
+
+.area-espa p{
+font-family: 'Barlow Condensed', sans-serif;	
+}
+
+.texto-lateral{padding-top:10px;}
+
+.nav-lateral{		 
+	 color: white;
+	 height:200px;
+	 padding-top:10px;	
+}
+
+.nav-lateral ul{
+	padding:0px;
+	margin:0px;	
+	width: 100%;
+	list-style:none;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size:1.1em;		
+}
+
+.nav-lateral ul li{
+	line-height:2em		
+}
+
+
+
+.nav-lateral ul li a {		
+	color:#3A3A3A;
+	text-decoration: none;
+	padding: 2px 10px;	
+}
+.nav-lateral ul li a:hover {			
+	color: white;	
+}
+
+
+/* ==== área lateral direita==== */
+
+
+.ld{height:500px;background-color: #3A3A3A;}
+
+.ld p{
+font-family: 'Barlow Condensed', sans-serif;	
+color:white;
+text-align:center;
+	
+}
+
+/* ====     área da imagem      ==== */
+/* ==== Espaços  ==== */
+
+.area-imagem-espacos{
+ height:500px;	
+background-image: url("../imagens/internas/esp-1.jpg");
+background-size: cover;
+background-repeat:no-repeat;	
+}
+
+/* ==== Musicas ==== */
+
+.area-imagem-musica{
+ height:500px;	
+background-image: url("../imagens/internas/esp-2.jpg");
+background-size: cover;
+background-repeat:no-repeat;	
+}
+
+
+/* ==== Narrativas ==== */
+
+.area-imagem-narrativas{
+ height:500px;	
+background-image: url("../imagens/internas/esp-3.jpg");
+background-size: cover;
+background-repeat:no-repeat;	
+}
+
+
+/* ==== Corpos ==== */
+
+.area-imagem-corpos{
+ height:500px;	
+background-image: url("../imagens/internas/esp-5.jpg");
+background-size: cover;
+background-repeat:no-repeat;	
+}
+
+
+/* ==== Grupos ==== */
+
+.area-imagem-grupos{
+ height:500px;	
+background-image: url("../imagens/internas/esp-4.jpg");
+background-size: cover;
+background-repeat:no-repeat;	
+}

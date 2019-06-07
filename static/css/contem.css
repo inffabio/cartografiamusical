@@ -1,0 +1,175 @@
+
+/* ====  CORPO DA PÁGINA  ==== */
+
+
+/* ======================= 03.1 Menu lateral cinza ======================================= */
+
+.lateral-contem{ height:600px;background: #B3B3B3; border-right:solid 1px #9A9A9A; }
+
+.area-espa{ padding-top:20px;}
+
+.area-espa p{
+font-family: 'Barlow Condensed', sans-serif;	
+}
+ 
+.texto-lateral{padding-top:10px;}
+
+.nav-lateral{		 
+	 color: white;
+	 height:200px;
+	 padding-top:10px;	
+}
+
+.nav-lateral ul{
+	padding:0px;
+	margin:0px;	
+	width: 100%;
+	list-style:none;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size:1.1em;	
+
+	
+}
+
+.nav-lateral ul li{
+	line-height:2em		
+}
+
+
+
+.nav-lateral ul li a {		
+	color:#3A3A3A;
+	text-decoration: none;
+	padding: 2px 10px;	
+}
+.nav-lateral ul li a:hover {			
+	color: white;	
+}
+
+/* ======================= 03.2 Cenario  ======================================= */
+
+
+
+
+/* 03.2.1 Barra de menu do cenario */
+
+
+.menu ul{
+	
+    width: 700px; /* Tamanho da lista principal */
+    margin: 0 auto; /* Para centralizar na página */
+    list-style: none;  
+	 z-index: 10;
+}
+.menu ul li{
+    float: left;
+    background-color: ;
+    position: relative; /* Necessário para o item filho se posicionar a LI que é o pai */
+}
+.menu ul li a{
+    display: block;
+    padding: 5px 25px;
+	 
+   
+    text-decoration: none;
+    color: #000000;
+}
+.menu ul li:hover > a{ /* Quando passarmos o mouse sobre a LI colocamos estilo no A */
+    
+    color: #FFFFFF;
+}
+
+.menu  ul li ul{
+    display: none;
+    position: absolute;
+	border:solid 1px #727272;
+	background-color:#B3B3B3;
+}
+
+.menu ul li:hover ul{ /* Quando passar o mouse sobre a LI aparecerá o menu filho */
+    width: 180px; /* Tamanho do menu filho */
+    display: block; 
+}
+.menu ul li ul li{
+    width: 180px;
+	margin-left:-50px;
+    cursor: pointer;
+}
+.menu ul li ul li:hover > a{
+    background-color: #727272;
+	margin-left:10px;
+	width: 180px;
+    color: #FFFFFF;
+}
+.menu ul li ul li ul li{
+    display: none;
+}
+.menu ul li ul li ul{
+    top: 0; /* Para deixar o sub-menu na mesma linha do menu pai */
+}
+.menu ul li ul li:hover ul li{
+    display: block;
+    width: 180px;
+    left: 0; /* Para deixar o sub-menu ao lado do menu pai */
+}
+
+
+/* 03.2.2 Cena do cenario */
+
+
+.cenario{background:  #B3B3B3; height:;
+	
+	
+}
+.midias-contem{ padding-left:20px;padding-top:10px; color:#000000;}
+
+.ftc{height:20px;}
+
+.titulo-2{font-family: 'Barlow Condensed', sans-serif;font-size:1.3em;}
+
+.midias{border:solid 1px #9A9A9A;height:200px;background: #B3B3B3}
+
+
+.cena{background:#B3B3B3; height:350px;}
+
+#cenario{
+	background-image: url("../imagens/contem/bgc_1.jpg");
+background-size: cover;
+background-repeat:no-repeat;
+height:340px;
+border: solid 1px #000000;	
+}
+
+
+
+
+
+
+/* ==== 03.2.3 Miniaturas do cenário ==== */
+
+.titulo{height:20px; background:#B3B3B3; text-align:center;}
+.miniatura { display: flex; flex-direction: row; }
+.item{padding:0px; border: solid 1px  #9A9A9A; margin-left:9px; margin-top:10px;width:80px;}
+
+.item img{
+	padding:0;
+	width:100%;
+	margin:0;
+	
+}
+
+
+
+/* ==== 03.3 área lateral direita==== */
+
+
+.ld{height:600px;background-color: #3A3A3A;}
+
+.ld p{
+font-family: 'Barlow Condensed', sans-serif;	
+color:white;
+text-align:center;
+	
+}
+
+

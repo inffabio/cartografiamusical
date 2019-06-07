@@ -1,0 +1,86 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+	<body id="corpo-espacos">
+
+	   <!-- Topo 1 internas -->
+	 <div class="container-fluid topo-1"></div>
+
+	 <!-- Topo 2 internas -->
+	<div class="container-fluid topo-2">
+	<div class="container">
+					 <div class="row">
+							 <div class="col-md-6 area-titulo">
+				<a href="{% url 'home'  %}"><h4>Cartografias Musicais do RJ</h4></a>
+			</div>
+
+			<div class="col-md-6 area-titulo">
+				<div class="nav-topo" >
+					<ul>
+							<li><a href="{% url 'espacos' %}">Espaços</a></li>
+							<li><a href="{% url 'musica' %}">Música</a></li>
+							<li><a href="{% url 'grupos' %}">Grupos</a></li>
+							<li><a href="{% url 'corpos' %}">Corpos</a></li>
+							<li><a href="{% url 'narrativas' %}">Narrativas</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+
+		<!-- Corpo do site -->
+		<div class="container-fluid">
+            <div class="row">
+				<!--Menu lateral cinza -->
+				<div class="col-md-4 lc ">
+					<div class="row area-espa">
+						<div class="col-md-12">
+							<span class="glyphicon glyphicon-play seta" ></span> <span class="titulo-1">Grupos</span>
+						</div>
+						<div class="col-md-10 texto-lateral">
+							<span  ></span>
+							<span  ><p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
+						</div>
+
+						<div class="col-md-12">
+							<div class="nav-lateral">
+								<ul>
+									  <li><a href="{% url 'espacocontem' %}">Rio de janeiro</a></li>
+									  <li><a href="{% url 'espacocontem' %}">Paraty</a></li>
+									  <li><a href="{% url 'espacocontem' %}">Rio das Ostras</a></li>
+									  <li><a href="{% url 'espacocontem' %}">Conservatório</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div><!-- Fim Barra lateral cinza -->
+
+				<div class="col-md-6 area-imagem-grupos"></div>
+
+					<!--Barra lateral direita -->
+				<div class="col-md-2 ld">
+					<div class="row area-espa">
+						<div class="col-md-10">
+							<p>Rio de janeiro</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							<p>Paraty</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							<p>Rio das Ostras</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							<p>Conservatório</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer 1 -->
+			<div class="row footer-1">
+				<div class="col-md-4"></div>
+				<div class="col-md-6 "><p>Cartografias Sensíveis das Cidades do Estado do Rio de Janeiro</p></div>
+			</div>
+
+		</div>
+
+	{% endblock %}

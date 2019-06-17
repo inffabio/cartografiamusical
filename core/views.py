@@ -20,3 +20,6 @@ def grupos(request):
 
 def musica(request):
     return render (request, 'core/musica.html')
+
+
+### Chave API youtube AIzaSyC1L4Bn6qrFV-87tuhUFs-eVYBGMu1QhXQ

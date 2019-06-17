@@ -1066,7 +1066,7 @@ textarea#message{
 }
 
 .footer-1{
-	 background: #3A3A3A;
+	 background: #000000;
 	text-align: right;
 	 font-family: 'Barlow Condensed', sans-serif;
 	 font-size:1.1em;
@@ -1079,9 +1079,7 @@ textarea#message{
 /* Footer 2 */
 
 #footer-2{
-	 background: #3A3A3A;
-	 
-	 
+	 background: white;
 	 color: white;
 	 height:80px;
 	 padding-top:10px;	
@@ -1120,7 +1118,7 @@ textarea#message{
 
 #parceiros{
 	
-	 background: white;
+	 background:;
 	 padding:10px;
 	 height:auto;
 }

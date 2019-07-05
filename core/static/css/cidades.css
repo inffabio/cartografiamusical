@@ -1,0 +1,53 @@
+
+.cidades{ height:800px;background: #B3B3B3; }
+.cidades-ro{ height:800px;background: #B3B3B3; }
+.icones-cidades{height:800px;background-color: #3A3A3A; color:white;}
+
+
+/* ==== Rio de Janeiro  ==== */
+
+.area-imagem-rio{
+ height:800px;	
+background-image: url("../imagens/cidades/rio.jpg");
+background-size: cover;
+background-repeat:no-repeat;	
+background-position: -100px 0%; 
+background-size: 900px;
+background-color:#333131;
+}
+
+/* ==== Paraty ==== */
+
+.area-imagem-paraty{
+ height:800px;	
+background-image: url("../imagens/cidades/paraty.jpg");
+background-size: cover;
+background-repeat:no-repeat;	
+background-position: -100px 0%; 
+background-size: 900px;
+background-color:#333131;
+}
+
+/* ==== Rio das Ostras ==== */
+
+.area-imagem-ro{
+ height:800px;	
+background-image: url("../imagens/cidades/ro.jpg");
+background-size: cover;
+background-repeat:no-repeat;	
+background-position: -100px 0%; 
+background-size: 900px;
+background-color:#333131;
+}
+
+/* ==== Conservatória ==== */
+
+.area-imagem-conservatoria{
+ height:800px;	
+background-image: url("../imagens/cidades/conservatoria.jpg");
+background-size: cover;
+background-repeat:no-repeat;	
+background-position: -100px 0%; 
+background-size: 900px;
+background-color:#333131;
+}

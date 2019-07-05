@@ -11,7 +11,6 @@
 
     <!-- Bootstrap -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 	<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" >
 	<link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
 	<link href="{% static 'css/animate.css' %}" rel="stylesheet" />
@@ -33,8 +32,21 @@
 	{% block content %}
 	{% endblock %}
 
-
-
+  <!-- Footer 1 -->
+	<div class="container-fluid footer-1" id="footer-1">
+		<div class="row ">
+				<div class="col-md-4">
+					<div id="menu-footer" >
+						<ul>
+						  <li><a href="{% url 'apresenta' %}">Apresentação</a></li>
+						  <li><a href="{% url 'equipe' %}">Equipe</a></li>
+						  <li><a href="{% url 'contato' %}">Contato</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 "><p>Cartografias Sensíveis das Cidades do Estado do Rio de Janeiro</p></div>
+		</div>
+	</div>
 
   <!-- Footer 2 -->
 
@@ -43,15 +55,15 @@
       <div class="col-md-3"></div>
       <div class="col-md-9" id="parceiros">
       <span class="logopar"><img src="{% static 'imagens/home/logo-1.jpg' %}" height="30"  alt="Logo Faperj" /></span>
-      <span class="logopar"><img src="{% static 'imagens/home/logo-2.jpg'  %} " height="30"  alt="Logo Faperj" /></span>
-      <span class="logopar"><img src="{% static 'imagens/home/logo-3.jpg'  %}" height="30"  alt="Logo Faperj" /></span>
-      <span class="logopar"><img src="{% static 'imagens/home/logo-4.jpg'  %}" height="30"  alt="Logo Faperj" /></span>
-      <span class="logopar"><img src="{% static 'imagens/home/logo-5.jpg'  %}" height="30"  alt="Logo Faperj" /></span>
-      <span class="logopar"><img src="{% static 'imagens/home/logo-6.jpg'  %}" height="30"  alt="Logo Faperj" /></span>
+      <span class="logopar"><img src="{% static 'imagens/home/logo-2.jpg' %}" height="30"  alt="Logo Faperj" /></span>
+      <span class="logopar"><img src="{% static 'imagens/home/logo-3.jpg' %}" height="30"  alt="Logo Faperj" /></span>
+      <span class="logopar"><img src="{% static 'imagens/home/logo-4.jpg' %}" height="30"  alt="Logo Faperj" /></span>
+      <span class="logopar"><img src="{% static 'imagens/home/logo-5.jpg' %}" height="30"  alt="Logo Faperj" /></span>
+      <span class="logopar"><img src="{% static 'imagens/home/logo-6.jpg' %}" height="30"  alt="Logo Faperj" /></span>
       </div>
-
     </div>
   </div>
+
 
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

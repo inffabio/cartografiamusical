@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Cidade, TipoMusica, Imagem, Video, Local
+from .models import Cidade, VideoCidade, EstruturaSite, VideoNarrativa, TipoVideo, TipoNarrativa, Bloco
+
 
 admin.site.register(Cidade)
-admin.site.register(Local)
-admin.site.register(TipoMusica)
-admin.site.register(Imagem)
-admin.site.register(Video)
+admin.site.register(VideoCidade)
+admin.site.register(EstruturaSite)
+admin.site.register(VideoNarrativa)

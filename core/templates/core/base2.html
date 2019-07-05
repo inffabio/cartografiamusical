@@ -1,0 +1,23 @@
+{% extends "core/base.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+    {% block barraLateral %}
+    <!--Barra lateral direita -->
+    <div class="col-md-2 ld">
+      <div class="row area-espa">
+        <div class="col-md-10 icons-cidade">
+
+         {% for cidade in Cidades.all %}
+             <p>{{cidade.Nome}}</p>
+             <a href="{% url 'narrativas' %}"><div class="cidade-ico"><img src="{{ cidade.Imagem.url }}" height="80" width="130"/></div></a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% endblock %}
+{% endblock %}

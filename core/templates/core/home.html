@@ -4,180 +4,158 @@
 
 
 <!-- Topo laranja -->
-<div class="container-fluid" id="topo"></div>
-<!-- Topo cinza -->
-<div class="container-fluid" id="tit-topo">
-<div class="container">
-       <div class="row">
-           <div class="col-md-6 area-titulo">
-   <h4>Cartografias Musicais do RJ</h4>
-   </div>
- </div>
-</div>
-</div>
+	<div class="container-fluid" id="topo"></div>
 
-<!-- Corpo do site -->
+	<!-- Topo cinza -->
+	<div class="container-fluid" id="tit-topo">
+		<div class="container">
+            <div class="row">
+                <div class="col-md-6 area-titulo">
+				<h4>Cartografias Musicais do RJ</h4>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<div id="home">
-<div class="slider">
- <div id="about-slider">
-   <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-     <!-- Indicators -->
-     <ol class="carousel-indicators visible-xs">
-       <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-       <li data-target="#carousel-slider" data-slide-to="1"></li>
-       <li data-target="#carousel-slider" data-slide-to="2"></li>
-     </ol>
+  <!-- Slider -->
+	<div id="slider">
+		<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators visible-xs">
+				<li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-slider" data-slide-to="1"></li>
+				<li data-target="#carousel-slider" data-slide-to="2"></li>
+			</ol>
 
-     <div class="carousel-inner">
-         <!-- lamina 1 -->
-       <div class="item active">
-         <div class="row">
-           <div class="col-md-3 bg-home-1"></div>
-           <div class="col-md-3">
-             <div class="row">
-               <a href="{% url 'espacos' %}"><div class="col-md-12 bg-home-2">
-                 <div class="cont-indica">
-                   <span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Espaços</span>
-                 </div>
-               </div></a>
-               <div class="col-md-12 bg-home-3"></div>
-               <div class="col-md-12 bg-home-4"></div>
-             </div>
-           </div>
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-5"></div>
-               <div class="col-md-12 bg-home-6"></div>
-               <a href="{% url 'narrativas' %}"><div class="col-md-12 bg-home-7">
-                 <div class="cont-indica">
-                   <span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Narrativas</span>
-                 </div>
-               </div></a>
-             </div>
-           </div>
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-8"></div>
-               <div class="col-md-12 bg-home-9"></div>
-               <div class="col-md-12 bg-home-10"></div>
-             </div>
-           </div>
-         </div>
-       </div>
-         <!-- lamina 2 -->
-        <div class="item">
-         <div class="row">
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-11"></div>
-               <a href="{% url 'corpos' %}"><div class="col-md-12 bg-home-12">
-                 <div class="cont-indica-12">
-                   <span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Corpos</span>
-                 </div>
-               </div></a>
-               <div class="col-md-12 bg-home-13"></div>
-             </div>
+			<div class="carousel-inner">
+					<!-- lamina 1 -->
+				<div class="item active">
+					<div class="row">
+						<div class="col-md-3 bg-home-1"></div>
+						<div class="col-md-3">
+							<div class="row">
+								<a href="{%  url 'estrutura' estruturaSiteNome='Espacos'  %}"><div class="col-md-12 bg-home-2">
+									<div class="cont-indica">
+										<span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Espaços</span>
+									</div>
+								</div></a>
+								<div class="col-md-12 bg-home-3"></div>
+								<div class="col-md-12 bg-home-4"></div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-5"></div>
+								<div class="col-md-12 bg-home-6"></div>
+								<a href="{% url 'narrativa' cidade_id=1 %}"><div class="col-md-12 bg-home-7">
+									<div class="cont-indica">
+										<span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Narrativas</span>
+									</div>
+								</div></a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-8"></div>
+								<div class="col-md-12 bg-home-9"></div>
+								<div class="col-md-12 bg-home-10"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<!-- lamina 2 -->
+			   <div class="item">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-11"></div>
+								<a href="{% url 'estrutura' estruturaSiteNome='Corpos' %}"><div class="col-md-12 bg-home-12">
+									<div class="cont-indica-12">
+										<span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Corpos</span>
+									</div>
+								</div></a>
+								<div class="col-md-12 bg-home-13"></div>
+							</div>
 
-           </div>
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-14"></div>
-               <div class="col-md-12 bg-home-15"></div>
-               <div class="col-md-12 bg-home-16"></div>
-             </div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-14"></div>
+								<div class="col-md-12 bg-home-15"></div>
+								<div class="col-md-12 bg-home-16"></div>
+							</div>
 
-           </div>
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-17"></div>
-               <div class="col-md-12 bg-home-18"></div>
-               <div class="col-md-12 bg-home-19"></div>
-             </div>
-           </div>
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-20"></div>
-               <div class="col-md-12 bg-home-21"></div>
-               <a href="{% url 'musica' %}"><div class="col-md-12 bg-home-22">
-                 <div class="cont-indica-22">
-                   <span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Música</span>
-                 </div>
-               </div></a>
-             </div>
-           </div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-17"></div>
+								<div class="col-md-12 bg-home-18"></div>
+								<div class="col-md-12 bg-home-19"></div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-20"></div>
+								<div class="col-md-12 bg-home-21"></div>
+								<a href="{% url 'estrutura' estruturaSiteNome='Musicas' %}"><div class="col-md-12 bg-home-22">
+									<div class="cont-indica-22">
+										<span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Músicas</span>
+									</div>
+								</div></a>
+							</div>
+						</div>
+					</div>
+			   </div>
+				<!-- lamina 3 -->
+			   <div class="item">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-23"></div>
+								<div class="col-md-12 bg-home-24"></div>
+								<div class="col-md-12 bg-home-25"></div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-26"></div>
+								<a href="{% url 'estrutura' estruturaSiteNome='Grupos' %}"><div class="col-md-12 bg-home-27">
+									<div class="cont-indica-22">
+										<span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Grupos</span>
+									</div>
+								</div></a>
+								<div class="col-md-12 bg-home-28"></div>
+							</div>
 
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-29"></div>
+								<div class="col-md-12 bg-home-30"></div>
+								<div class="col-md-12 bg-home-31"></div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-12 bg-home-32"></div>
+								<div class="col-md-12 bg-home-33"></div>
+								<div class="col-md-12 bg-home-34"></div>
+							</div>
+						</div>
+					</div>
+			   </div>
+			</div>
 
-         </div>
-        </div>
-         <!-- lamina 3 -->
-        <div class="item">
-         <div class="row">
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-23"></div>
-               <div class="col-md-12 bg-home-24"></div>
-               <div class="col-md-12 bg-home-25"></div>
-             </div>
-           </div>
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-26"></div>
-               <a href="{% url 'grupos' %}"><div class="col-md-12 bg-home-27">
-                 <div class="cont-indica-22">
-                   <span class="glyphicon glyphicon-play seta" ></span> <span class="indica">Grupos</span>
-                 </div>
-               </div></a>
-               <div class="col-md-12 bg-home-28"></div>
-             </div>
+			<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
 
-           </div>
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-29"></div>
-               <div class="col-md-12 bg-home-30"></div>
-               <div class="col-md-12 bg-home-31"></div>
-             </div>
-           </div>
-           <div class="col-md-3">
-             <div class="row">
-               <div class="col-md-12 bg-home-32"></div>
-               <div class="col-md-12 bg-home-33"></div>
-               <div class="col-md-12 bg-home-34"></div>
-             </div>
-           </div>
+			<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+	</div><!-- Fim do Slider -->
 
-
-         </div>
-        </div>
-     </div>
-
-     <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
-       <i class="fa fa-angle-left"></i>
-     </a>
-
-     <a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
-       <i class="fa fa-angle-right"></i>
-     </a>
-   </div>
- </div>
-</div>
-</div><!-- fim do Corpo do site -->
-
-
-<!-- Footer 1 -->
-  <div class="row footer-1">
-      <div class="col-md-4">
-        <div id="menu-footer" >
-          <ul>
-            <li><a href="#">Apresentação</a></li>
-            <li><a href="#">Equipe</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 "><p>Cartografias Sensíveis das Cidades do Estado do Rio de Janeiro</p></div>
-    </div>
 
 
 {% endblock %}

@@ -1,0 +1,68 @@
+{% extends 'core/base2.html' %}
+
+{% block content %}
+
+<body id="corpo-espacos">
+
+	   <!-- Topo 1 internas -->
+	 <div class="container-fluid topo-1"></div>
+
+	  <!-- Topo 2 internas -->
+	 <div class="container-fluid topo-2">
+		<div class="container">
+            <div class="row">
+                <div class="col-md-6 area-titulo">
+					<a href="{% url 'home' %}"><h4>Cartografias Musicais do RJ</h4></a>
+				</div>
+
+				<div class="col-md-6 area-titulo">
+					<div class="nav-topo" >
+						<ul>
+                {%   for bloco in BlocosSite   %}
+							   <li><a href="{%  url 'estrutura' estruturaSiteNome=bloco.name %}">{{bloco.value }}</a></li>
+              {% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </div>
+
+		<!-- Corpo do site -->
+		<div class="container-fluid">
+            <div class="row">
+				<!--Menu lateral cinza -->
+				<div class="col-md-4 lc ">
+					<div class="row area-espa">
+						<div class="col-md-12">
+							<span class="glyphicon glyphicon-play seta" ></span> <span class="titulo-1">{{ EstruturaSite.Nome}}</span>
+						</div>
+						<div class="col-md-12 texto-lateral">
+
+							<span  ><p style="text-align: justify;">{{ EstruturaSite.Descricao}} </p></span></div>
+
+					</div>
+				</div><!-- Fim Barra lateral cinza -->
+
+
+
+				<div class="col-md-6 area-imagem">
+ 				 <img src='{{ EstruturaSite.Imagem.url }}'' height="500"/>
+ 			 </div>
+
+				<!--Barra lateral direita -->
+		    <div class="col-md-2 ld">
+		      <div class="row area-espa">
+		        <div class="col-md-10 icons-cidade">
+
+		         {% for cidade in Cidades.all %}
+		             <p>{{cidade.Nome}}</p>
+		             <a href="#"><div class="cidade-ico"><img src="{{ cidade.Imagem.url }}" height="80" width="130"/></div></a>
+		          {% endfor %}
+		        </div>
+		      </div>
+		    </div>
+
+		</div>
+	</div>
+		{% endblock %}

@@ -26,12 +26,11 @@ import core.views
 urlpatterns = [
           path('admin/', admin.site.urls),
           path('', core.views.home, name='home'),
-          path('narrativas/', core.views.narrativas, name='narrativas'),
-          path('espacos/', core.views.espacos, name='espacos'),
-          path('corpos/', core.views.corpos, name='corpos'),
-          path('espacocontem/', core.views.espacocontem, name='espacocontem'),
-          path('grupos/', core.views.grupos, name='grupos'),
-          path('musica/', core.views.musica, name='musica'),
+          path('narrativas/<int:cidade_id>/', core.views.narrativas, name='narrativa'),
+          path('estrutura/<estruturaSiteNome>/', core.views.estruturaSite, name='estrutura'),
+          path('apresenta/', core.views.apresenta, name='apresenta'),
+          path('equipe/', core.views.equipe, name='equipe'),
+          path('contato/', core.views.contato, name='contato'),
           path('login/', auth_views.LoginView.as_view(), name='login'),
           path('logout/', auth_views.LogoutView.as_view(), name='logout'),
 ]
